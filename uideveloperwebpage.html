@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+            /* background-color: rgb(246 246 249); */
+        }
+        .container{
+            /* border: 2px solid black; */
+            display: flex;
+        }
+
+        .sidecontainer {
+            /* border: 2px solid blue; */
+            height: 100vh;
+            width: 10%;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 5px 0px 21px 9px #c9c9d4;
+            background-color: rgb(246 246 249);
+
+        }
+
+        .box {
+            /* border: 2px solid black; */
+            height:20vh;
+            width: 100%;
+            margin-top: 3px;
+            background-color: white;
+            text-align: center;
+            background-color: #efeffb;
+
+        }
+
+        .maincontainer {
+            /* border: 2px solid green; */
+            margin-top: 100px;
+            margin-left: 22px;
+            width: 100%;
+            background-color: rgb(246 246 249) ;
+           
+        }
+        .video{
+            display: flex;
+            flex-direction: row;
+            margin-top: 12px;
+            margin-left: 0px;
+            color: blue;
+        }
+        .inputdiv{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin:50px 90px;
+            /* border: 2px solid green; */
+        }
+       
+         .inputclass {
+            width: 50wh;
+            height: 2rem;
+            border-radius: 10px;
+            border-color: transparent;
+            background-color: white;
+            padding: 2px 12px;
+            
+        }
+         p{
+             width: 50px;
+            margin:auto;
+        } 
+        .file-upload{
+            height: 120px;
+            width: 120px;
+            background-color: white;
+            border: transparent;
+            text-align: center;
+            color: black;
+            font-size: medium;
+        }
+        .box .fa{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 50px;
+            font-size:50px ;
+            margin-top: 20px;
+            cursor: pointer;
+            color: #c1c1d1;
+           }
+           
+        
+    </style>
+</head>
+
+<body>
+    <section class="container">
+    <div class="sidecontainer">
+        <div class="box" id="box1"><i class="fa fa-podcast" aria-hidden="true"></i></div>
+        <div class="box" id="box2"><i class="fa fa-user-o" aria-hidden="true"></i>students</div>
+        <div class="box" id="box3"><i class="fa fa-book" aria-hidden="true"></i>lesson plan</div>
+        <div class="box" id="box4"><i class="fa fa-cog" aria-hidden="true"></i>setting</div>
+    </div>
+    <div class="maincontainer">
+        <div class="video">
+            <i class="fa fa-play-circle-o" aria-hidden="true"></i>
+            <h5>videos</h5>
+            
+        </div>
+        <div class="inputdiv">
+        <input type="text" class="inputclass" placeholder="insert url here">
+        <p>or</p>
+        <input class="file-upload" type="" placeholder="upload"/>
+        </div>
+    </div>
+</section>
+</body>
+
+</html>
